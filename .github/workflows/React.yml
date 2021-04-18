@@ -40,6 +40,6 @@ jobs:
       with:
         name: Live Server
         path: |
-          .gitconfig
+          ./.gitconfig
           live-server/
           !live-server/node_modules/
