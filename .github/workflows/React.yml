@@ -27,11 +27,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm i -g yarn
     - run: npx create-react-app live-server
+    - run: cd live-server
     
     - name: Get Server Files
       uses: actions/upload-artifact@v2.2.3
       with:
         name: Live Server
         path: |
-          ./
-          !node_modules/
+          live-server/
+          !live-server/node_modules/
