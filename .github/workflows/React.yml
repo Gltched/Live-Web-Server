@@ -29,7 +29,7 @@ jobs:
     - run: |
         cd live-server
         npm install
-        yarn start
+        yarn build
     
     - name: Get Server Files
       uses: actions/upload-artifact@v2.2.3
