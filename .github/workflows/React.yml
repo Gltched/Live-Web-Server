@@ -30,6 +30,8 @@ jobs:
         cd live-server
         npm install
         yarn build
+        yarn global add serve
+        serve -s build
     
     - name: Get Server Files
       uses: actions/upload-artifact@v2.2.3
