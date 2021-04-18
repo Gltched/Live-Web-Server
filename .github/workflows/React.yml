@@ -28,6 +28,7 @@ jobs:
     - run: npm i -g yarn
     - run: |
         cd live-server
+        npm install
         yarn start
     
     - name: Get Server Files
