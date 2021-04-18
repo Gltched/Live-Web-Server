@@ -27,7 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm i -g yarn
     - run: cd live-server
-    - run: npm i
+    - run: npm install
     
     - name: Get Server Files
       uses: actions/upload-artifact@v2.2.3
