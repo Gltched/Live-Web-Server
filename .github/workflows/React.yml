@@ -30,7 +30,7 @@ jobs:
     - run: sudo ufw allow 3000
     - run: |
         git config --global user.email "gltchcraftmc@gmail.com"
-        git config --global user.name "Gltched"
+        git config --global user.name "Emerald Stanley"
         cd live-server
         npm install
         yarn add gh-pages
