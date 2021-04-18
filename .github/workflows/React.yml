@@ -32,4 +32,6 @@ jobs:
       uses: actions/upload-artifact@v2.2.3
       with:
         name: Live Server
-        path: ./
+        path: |
+          ./
+          !node_modules/
