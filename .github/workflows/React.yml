@@ -33,7 +33,7 @@ jobs:
         npm install
         yarn build
         yarn global add serve
-        serve -s build
+        serve
     
     - name: Get Server Files
       uses: actions/upload-artifact@v2.2.3
