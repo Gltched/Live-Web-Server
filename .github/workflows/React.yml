@@ -32,7 +32,6 @@ jobs:
         cd live-server
         npm install
         yarn add gh-pages
-        yarn run deploy
         git config --global user.email "gltchcraftmc@gmail.com"
         git config --global user.name "Emerald Stanley"
     
