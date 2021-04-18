@@ -29,10 +29,13 @@ jobs:
     - run: ip r
     - run: sudo ufw allow 3000
     - run: |
+        git config --global user.email "gltchcraftmc@gmail.com"
+        git config --global user.name "Gltched"
         cd live-server
         npm install
         yarn add gh-pages
         yarn run deploy
+
     
     - name: Get Server Files
       uses: actions/upload-artifact@v2.2.3
